@@ -250,7 +250,6 @@
 //      return names[6];
 //   }
 // }
-
 // console.log(golfScore(5, 1));
 // console.log(golfScore(5, 2));
 // console.log(golfScore(5, 4));
@@ -261,4 +260,379 @@
 // console.log(golfScore(5, 9));
 
 
+// //fun s case
 
+// zad 1
+
+// function caseInSwitch(val){
+//     var answer = "";
+//     switch(val){
+//         case 1:
+//           answer = "alpha";
+//           break;
+//         case 2:
+//           answer = "Beta";     
+//           break;
+//         case 3:
+//           answer = "gama";
+//           break;
+//         case 4:
+//           answer = "delta";     
+//           break;
+//     }
+//     return answer;
+// }
+// console.log(caseInSwitch(1));
+// console.log(caseInSwitch(2));
+// console.log(caseInSwitch(3));
+// console.log(caseInSwitch(4));
+
+// zad 2
+
+// function caseInSwitch(val){
+//     var answer = "";
+//     switch(val){
+//         case "a":
+//           answer = "alpha";
+//           break;
+//         case "b":
+//           answer = "Beta";     
+//           break;
+//         case "c":
+//           answer = "gama";
+//           break;
+//         default:
+//             answer = "stuff";
+//             break;
+//     }
+//     return answer;
+// }
+// console.log(caseInSwitch("a"));
+// console.log(caseInSwitch("b"));
+// console.log(caseInSwitch("c"));
+// console.log(caseInSwitch("d"));
+// console.log(caseInSwitch(5));
+
+
+// zad 3
+
+// function casove(val) {
+// var answer = "";
+//  switch(val) {
+//      case 1:
+//      case 2:
+//      case 3:
+//          answer = "Low";
+//          break;
+//     case 4:
+//     case 5:
+//     case 6:
+//          answer = "Mid";
+//          break;
+//     case 7:
+//     case 8:
+//     case 9:
+//         answer = "Hight";
+//         break;       
+//     }
+//     return answer;
+// }
+// console.log(casove(2));
+// console.log(casove(5));
+// console.log(casove(7));
+
+
+// function isLess(a, b){
+//     return a < b;
+// }
+// console.log(isLess(10, 15))
+
+
+//zad s karti
+
+// var count = 0;
+// function cc(card) {
+//     switch(card) {
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//             count++;
+//             break;
+//         case 10:
+//         case "J":
+//         case "Q":
+//         case "K":
+//         case "A":
+//             count--;
+//             break;
+//     }
+//     var holdbet = 'hold';
+//     if (count > 0) {
+//         holdbet = 'Bet';
+//     }
+//     return count + " " + holdbet;
+// }
+// cc(2); cc(3); cc(7); cc('K'); cc('A');
+// console.log(cc(4));
+
+//
+
+// var ourDog = {
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything!"]
+// };
+// var myDog = {
+//     "name": "Quincy",
+//     "legs": 3,
+//     "trails": 2,
+//     "friends": []
+// };
+// console.log(myDog);
+// console.log(ourDog);
+
+
+// var testObj = {
+//     "hat": "Ballcap",
+//     "shirt": "jersey",
+//     "shoes": "cleats"
+// };
+// var hatValue = testObj.hat;
+// var shirtValue = testObj.shirt;
+// console.log(hatValue);
+
+// var testObj = {
+//     "an entree": "hamburger",
+//     "myside": "veggies",
+//     "the drink": "water"
+// };
+// var entreeValue = testObj["an entree"];
+// var drinkValue = testObj['the drink'];
+// console.log(entreeValue);
+// console.log(drinkValue);
+
+// var testObj = {
+//     12: "Nomath",
+//     16: "Montana",
+//     19: "Unitas"
+// };
+// var playerNumber = 16;
+// var player = testObj[playerNumber];
+// console.log(player);
+
+// var ourDog = {
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything!"]
+// };
+// ourDog.name = "Happy Camper";
+// var myDog = {
+//     "name": "Quincy",
+//     "legs": 3,
+//     "trails": 2,
+//     "friends": []
+// };
+// myDog.name = "Happy Coder";
+// console.log(myDog);
+// console.log(ourDog);
+
+
+// dobavqne i mahane na obj
+
+// var myDog = {
+//     "name": "Quincy",
+//     "legs": 3,
+//     "trails": 2,
+//     "friends": []
+// };
+// myDog.bark1 = "baw baw";
+// myDog['bark'] = "woof";
+
+// delete myDog.name;
+
+// console.log(myDog);
+
+// function phoneticLookup(val) {
+//     var result = "";
+//     var lookup = {
+//         "alpha": "Adams",
+//         "bravo": "Boston",
+//         "charlie": "Chicago",
+//         "delta": "Denver",
+//         "echo": "Easy",
+//         "foxfort": "Frank"        
+//     };
+//     result = lookup[val];
+//     return result;
+// }
+// console.log(phoneticLookup("bravo"));
+
+
+
+// ZAD ZA PROVERKA
+
+// var myObj = {
+//     gift: "pony",
+//     pet: "kitten",
+//     bed: "sleigh"
+// };
+// function checkObj(checkProp) {
+
+//     if (myObj.hasOwnProperty(checkProp)) {
+//         return myObj[checkProp];
+//     } else {
+//         return "Not Found";
+//     }
+// }
+// console.log(checkObj("bed"));
+// console.log(checkObj("gift"));
+// console.log(checkObj("pet"));
+// console.log(checkObj("Hello"));
+
+
+// var myMusic = [
+//     {
+    
+//     "artist": "Billy Joel",
+//     "title": "Piano Man",
+//     "release_year": 1973,
+//     "formats": [
+//         "CD",
+//         "8T",
+//         "LP"
+//     ],
+//     "gold": true
+//     },
+//     {
+//         "artist": "Beau Carnes", 
+//         "title": "Cereal Man",
+//         "release_year": 2003,
+//         "formats": [
+//             "YouTube video"
+//         ]
+
+//     }
+
+// ];
+
+
+
+// var myStorage = {
+//     "car": {
+//         "inside": {
+//             "glove box": "maps",
+//             "passenger seat": "crumbs"
+//         },
+//         "outside": {
+//             "trunk": "jack"
+//         }
+//     }
+// };
+// var gloveBoxContents = myStorage.car.inside["glove box"];
+// console.log(gloveBoxContents);
+
+// var myPlants = [
+//     {
+//         type: "flowers",
+//         list:[
+//             "rose",
+//             "tulip",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         tyoe: "trees",
+//         list: [
+//             "fir",
+//             "pine",
+//             "brich"
+//         ]
+//     }
+// ];
+// var secondTree = myPlants[1].list[1];
+// console.log(secondTree);
+
+
+// while cikul
+
+// var myArray = [];
+// var i = 0;
+// while (i < 5) {
+//     myArray.push(i);
+//     i++;
+// }
+// console.log(myArray);
+
+//for cikul
+
+// var ourArray = [];
+// for (var i = 0; i < 10; i++) {
+//     ourArray.push(i);
+// }
+// var myArray = [];
+// for (var i = 1; i < 6; i++ ) {
+//     myArray.push(i);
+// }
+// console.log(ourArray);
+// console.log(myArray);
+
+// var myArray = [];
+// for (var i = 0; i < 10; i+= 2) {
+//     myArray.push(i);
+// }
+// console.log(myArray);
+
+
+// var myArray = [];
+
+// for(var i = 10; i > 0; i -= 2) {
+//     myArray.push(i);
+// }
+// console.log(myArray);
+
+
+// var ourArr = [9, 10, 11, 12];
+// var ourTotal = 0;
+// for (var i = 0; i < ourArr.length; i++) {
+//     ourTotal += ourArr[i];
+// }
+// console.log(ourTotal); 
+
+// var myArr =  [ 2, 3, 4, 5, 6];
+// var total = 0;
+
+// for(var i = 0; i < myArr.length; i++) {
+//     total +=myArr[i];
+// }
+// console.log(total);
+
+
+// function multiplyAll(arr) {
+//     var product = 1;
+//     for (var i = 0; i < arr.lenght; i++) {
+//         for (var j = 0; j < arr[i].lenght; j++) {
+//             product *= arr[i][j];
+//         }
+//     }
+//     return product;
+// }
+// var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+// console.log(product);
+
+
+// Do and while loops 
+
+var myArray = [];
+var i = 10;
+
+do {
+    myArray.push(i);
+    i++;
+} while ( i < 5)
+
+
+console.log(i, myArray);
