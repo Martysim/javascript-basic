@@ -626,13 +626,125 @@
 
 // Do and while loops 
 
-var myArray = [];
-var i = 10;
+// var myArray = [];
+// var i = 10;
+// do {
+//     myArray.push(i);
+//     i++;
+// } while ( i < 5)
+// console.log(i, myArray);
 
-do {
-    myArray.push(i);
-    i++;
-} while ( i < 5)
 
 
-console.log(i, myArray);
+// zad za obhojdane i tusene 
+
+// var contacts = [
+//     {
+//         "firstName": "Akira",
+//         "lastName": "Laine",
+//         "number": "0543236543",
+//         "likes": ["Pizza", "Coding", "Brownie Points"]
+//     },
+//     {
+//         "firstName": "Harry",
+//         "lastName": "Potter",
+//         "number": "0994372684",
+//         "likes": ["Hogwarts", "Magic", "Hagrid"]
+//     },
+//     {
+//         "firstName": "Sherlock",
+//         "lastName": "Holmes",
+//         "number": "0487345643",
+//         "likes": ["Intriguing Cases", "Violin"]
+//     },        
+//     {
+//         "firstName": "Kristian",
+//         "lastName": "Vos",
+//         "number": "unknown",
+//         "likes": ["Javascript", "Gaming", "Foxes"]
+//     },
+// ];
+// function lookUpProfile(name, prop) {
+//     for (var i = 0; i < contacts.length; i++) {
+//         if (contacts[i].firstName === name) {
+//             return contacts[i][prop] || "No such property";
+//         }
+//     }
+//     return "no such contact";
+// }
+// var data = lookUpProfile("Akira","number");
+// console.log(data);
+
+
+// random funkciq
+
+// var randomNumberBetween0nad19 = Math.floor(Math.random()*20);
+// function randomWholeNum() {
+
+//     return Math.floor(Math.random() * 10);
+// }
+// console.log(randomWholeNum());
+// console.log(randomNumberBetween0nad19);
+
+
+// function randomRange (myMin, myMax){
+//     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// }
+// var myRandom = randomRange(5, 15);
+// console.log(myRandom);
+
+// function convertToInteger(str) {
+//     return parseInt(str);
+// }
+// console.log(convertToInteger("56"));
+
+// function convertToInteger(str) {
+//     return parseInt(str, 2);
+// }
+// var date = convertToInteger("10011");
+// console.log(date);
+
+
+// sukraten zapis if else
+
+// function checkEqual(a, b){
+//     return a === b ? true : false;
+// }
+// var check = checkEqual (1, 1);
+// console.log(check);
+
+
+// proverka v returna
+
+// function checkSign(num) {
+//  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+// }
+// console.log(checkSign(10));
+// console.log(checkSign(-3));
+// console.log(checkSign(0));
+
+//update const
+
+// const s = [5, 7, 2];
+// function editInPlace(){
+//     "use strict";
+//     // s = [2, 5, 7];
+//     s[0] = 2;
+//     s[1] = 5;
+//     s[2] = 7;
+// }
+// editInPlace();
+// console.log(s);
+
+// premahvane chasticno na obekti
+
+const source = [1,2,3,4,5,6,7,8,9,10] ;
+function removeFirstTwo(list) {
+    const [ , , ...arr] = list;
+    return arr ;
+}
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+
+
