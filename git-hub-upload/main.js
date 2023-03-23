@@ -738,13 +738,31 @@
 
 // premahvane chasticno na obekti
 
-const source = [1,2,3,4,5,6,7,8,9,10] ;
-function removeFirstTwo(list) {
-    const [ , , ...arr] = list;
-    return arr ;
-}
-const arr = removeFirstTwo(source);
-console.log(arr);
-console.log(source);
+// const source = [1,2,3,4,5,6,7,8,9,10] ;
+// function removeFirstTwo(list) {
+//     const [ , , ...arr] = list;
+//     return arr ;
+// }
+// const arr = removeFirstTwo(source);
+// console.log(arr);
+// console.log(source);
 
 
+
+
+
+
+
+
+
+
+// Telerik kursove
+
+
+// window.onload = function() {
+//     alert('works');
+// };
+
+for (let i = 0; i < 7; i++) {
+    console.log(i);
+};
